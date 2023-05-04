@@ -18,7 +18,7 @@ const RepoItem = ({ repo }) => {
   return (
     <div className="mb-2 rounded-md card bg-neutral hover:bg-neutral-500">
       <div className="card-body shadow-xl">
-        <h3 className="mb-2  font-semibold text-xs md:text-lg lg:text-xl">
+        <h3 className="mb-2  font-semibold text-sm md:text-lg lg:text-xl">
           <a href={html_url}>
             <FaLink className="inline mr-1  " /> {name}
           </a>
