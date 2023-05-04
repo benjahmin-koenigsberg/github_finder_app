@@ -15,17 +15,19 @@ const handleChange = (e) => {
 setText(e.target.value)
 }
 
-const handleSubmit = async (e) => {
-e.preventDefault()
-if (text === '') {
-setAlert('Please enter something', 'error')
-} else {
-  dispatch({type: 'SET_LOADING'})
-        const users = await searchUsers(text)
-        dispatch({type: 'GET_USERS', payload: users})
-        setText('')
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (text === "") {
+      setAlert("Please enter something", "error");
+    } else {
+      dispatch({ type: "SET_LOADING" });
+      const users = await searchUsers(text);
+      dispatch({ type: "GET_USERS", payload: users });
+
+      setText("");
     }
-}
+  };
 
   return (
     <div className="grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 mb-8 gap-8 ">

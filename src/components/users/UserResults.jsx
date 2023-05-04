@@ -17,9 +17,7 @@ const UserResults = () => {
       </div>
     );
   } else {
-    return (
-        <Loading />
-    );
+    return <Loading />;
   }
 };
 

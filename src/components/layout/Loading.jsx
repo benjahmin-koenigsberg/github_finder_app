@@ -6,7 +6,7 @@ const Loading = () => {
         <img className='text-center mx-auto'
          width={180}
         src={LoadingGif}
-        alt='walking code figure loading gif' />
+        alt='snoop dogg dancing gif' />
     </div>
   )
 }
